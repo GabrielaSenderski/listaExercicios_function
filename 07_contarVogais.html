@@ -7,6 +7,20 @@
     */
 
     //Entrada
+    function contarVogais(palavra) {
+        const vogais = 'aeiou';
+
+
+        return palavra
+            .toLowerCase()
+            .split('')
+            .filter(caractere => vogais.includes(caractere))
+            .length;
+    }
+
+    let informar = prompt("Informe uma palavra");
+    let resultado = contarVogais(informar);
+    alert(`A palavra "${informar}" tem ${resultado} vogais`);
 
 
     //Processamento

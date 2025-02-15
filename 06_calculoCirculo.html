@@ -8,7 +8,20 @@
     */
 
     //Entrada
+    
+    function calcularArea(pi, raio){
+        let area = pi * (raio * raio);
+        document.write(`A área do círculo é ${area} <br>`)
+    }
 
+    function calcularPeri(pi, raio){
+        let perimetro = 2 * pi * raio;
+        document.write(`O perímetro do círculo é ${perimetro.toFixed(1)}`);
+    }
+
+    let raio = Number(prompt("Informe o raio do círculo"));
+    calcularArea(3.14, raio);
+    calcularPeri(3.14, raio);
 
     //Processamento
 
