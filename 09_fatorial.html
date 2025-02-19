@@ -5,8 +5,21 @@
     */
 
     //Entrada
+    function calcularFatorial(param) {
+        if (param === 0 || param === 1) return 1;
+
+        let fatorial = 1;
+        for (let i = param; i > 1; i--) {
+            fatorial *= i;
+        }
+        return fatorial;
+    }
 
 
+
+    let numero = Number(prompt("Informe um número"));
+    let resultado = calcularFatorial(numero);
+    alert(`${numero} fatorial é ${resultado}`);
     //Processamento
 
 
