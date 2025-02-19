@@ -5,8 +5,15 @@
     */
 
     //Entrada
-
-
+    function verificar(params) {
+        if (params % 2 == 0) {
+            alert(`${params} é par!`);
+        } else {
+            alert(`${params} é impar`);
+        }
+    }
+    let num = Number(prompt("Insira um número para descobrir se é par ou ímpar:"));
+    verificar(num);
     //Processamento
 
 
