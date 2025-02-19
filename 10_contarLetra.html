@@ -6,6 +6,26 @@
     */
 
     //Entrada
+    function contarLetra(frase, letra) {
+    frase = frase.toLowerCase();
+    letra = letra.toLowerCase();
+    
+    return frase.split(letra).length - 1;
+}
+
+
+let frase = prompt("Digite uma frase:");
+let letra = prompt("Digite uma letra:");
+
+
+if (letra.length !== 1) {
+    console.log("Por favor, insira apenas uma única letra.");
+} else {
+   
+    let resultado = contarLetra(frase, letra);
+    console.log(`A letra '${letra}' aparece ${resultado} vezes na frase.`);
+}
+
     
 
     //Processamento
