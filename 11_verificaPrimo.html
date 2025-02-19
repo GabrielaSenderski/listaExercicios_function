@@ -5,6 +5,17 @@
     */
 
     //Entrada
+    function primo(params) {
+        for (let index = 2; index < numero; index++) {
+            if (numero % index == 0) {
+                return alert("Não é primo");
+            }
+        }
+        return alert("É primo");
+    }
+    let numero = Number(prompt("Informe um número:"));
+    let resultado = primo(numero);
+    alert(resultado);
 
 
     //Processamento
